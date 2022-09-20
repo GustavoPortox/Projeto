@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5dd53;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 35px;
+    border-radius: 16px;
+  }
+  
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 395px; /* Should be removed. Only for demonstration */
+    border-radius: 16px;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }[type="checkbox"]{
+      appearance: none;
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      background-color: #d5d5d5;
+      border-radius: 5px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+  }
+  input[type="checkbox"]#ok:checked{
+      background-color: #5bcD3E;
+  }
+  input[type="checkbox"]#nok:checked{
+      background-color: #bd3e3e;
+  }
+  label{
+      color: #4c4c4c;
+      font-size: 12px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+  }
+  input[type="ckeckbox"]:after{
+      content: "\f00c";
+  }
+  input[type="checkbox"]:hover{
+      background-color: #a5a5a5;
+  }
+  .container {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 150px; /* Should be removed. Only for demonstration */
+    border-radius: 16px;
+    background-color: #f3e8a8;
+    border-radius: 8px;
+  }
+  .skill{
+     width: 160px;
+     height: 160px;
+     /*background-color: cornflowerblue;*/
+     position: relative; 
+  }
+  .outer{
+      height: 160px;
+      width: 160px;
+      border-radius: 50%;
+      padding: 20px;
+      box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                  -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+  }
+  .inner{
+      height: 120px;
+      width: 120px ;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                  inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                  -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                  0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                  0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  #number{
+      font-weight: 600px;
+      color: #555;
+  
+  }
+  circle{
+      fill: none;
+      stroke: url(#GradientColor);
+      stroke-width: 20px;
+      stroke-dasharray: 472;
+      stroke-dashoffset: 472;
+      animation: anim 2s linear forwards;
+  }
+  svg{
+      position: absolute;
+      top: 21%;
+      left: 4%;
+  }
+  @keyframes anim {
+      100%{
+          stroke-dasharray: 0;
+      }
+      0%{
+          stroke-dashoffset: 100 ;
+      }
+  }
